@@ -1,0 +1,125 @@
+* {
+  margin:0;
+}
+
+body {
+  background-color: #22313F;
+  font-family: Montserrat, sans-serif;
+}
+
+img {
+  border-radius: 10px;
+}
+/* galerie */
+#galerie {
+  background-color: white;
+  color: #22313F;
+  margin-bottom: 10px;
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 33px;
+
+}
+/* Wes-section */
+#head-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#wes-div {
+/*background-image: url(wes.png);*/
+margin-bottom: 10px;
+height: 300px;
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+}
+  #top-title {
+    text-align: center;
+    background-color: white;
+    color: #22313F;
+    padding-bottom: 10px;
+  }
+
+/* End Wes-section */
+
+/* Wes-row hidden on big size screen */
+
+#big-size-hidden {
+  display: none;
+}
+/* End Wes row hidden*/
+
+/* Rows general code */
+
+
+
+
+.row {
+  justify-content: center;
+  display: flex;
+  margin-top: 12px;
+  margin-left: 0;
+}
+.pic-title {
+  width: 500px;
+  padding-left: 20px;
+  margin-left: 20px;
+  color: white;
+  padding-top: 150px;
+}
+
+h1 {
+  font-size: 50px;
+}
+/* ------------------------------------------------------------------------------------------ */
+
+@media screen and (min-width:601px) and (max-width:1000px){
+
+.row {
+  width: 45%;
+  display: inline-block;
+ margin: 19px;
+}
+
+#wes-div {
+  display: none;
+}
+
+  #top-title {
+display: none;
+  }
+
+  #galerie {
+    background-color: #22313F;
+    color: white;
+  }
+  .pic-title {
+    padding-top: 20px;
+  }
+
+}
+@media screen and (max-width:600px){
+  .row {
+  margin-left: 0px;
+  flex-direction: column;
+}
+.pic-title {
+  margin-left: 40px;
+  width: auto;
+  padding-top: 0px;
+  padding-top: 7px;
+}
+  #wes-pic {
+    width: 390px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  #wes-div {
+display: none; }
+
+#top-title {
+display: none;
+}
+}
